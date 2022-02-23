@@ -1,0 +1,69 @@
+personnel.txt
+[name and surname] tab [register number] tab [position of personel] tab [and year of start] newline
+
+Mehmet Yılmaz	F5632 FACULTY_MEMBER	2003	
+
+monitoring.txt
+[register number] tab [1.week] tab [2.week] tab [3.week] tab [4.week] newline
+
+F5632	49	44	48	58
+
+PERSONNEL HIERARCHY AND SALARY CONTENT
+
+Personnels: Academician, Officer, Employee and Security            
+
+Academicians: Faculty Members, Research Assistants
+
+Employees could work Part-time or Full-time  --> Full time çalışanlar Worker and Chief olabilir.
+
+Academicians have a baseSalary ssBenefits severancePAy 
+
+Faculty Members can have an additional course fee addCourseFee fakat haftada 8 saate kadar alabilir. Her saat 20 TL 
+illa ders vermek zorunda da değil
+
+Officers have a baseSalary ,ssBenefits and severancePay also overWorkSalary fakat 10 saate kadar alabilirler. Her saat 20 TL
+
+Security hourOfWork and severancePay. her gün için 5 TL transMoney and 10 TL foodMoney. 
+Security can work a maximum 9 hours and minimum of 5 hours a day. They do not work one day of the week. Her saat 10 TL
+
+Full-Time Employee dayOfWork, severancePay. They do not work at weekends. Workers are paid 105 TL and Chiefs 125 TL her gün için
+Workers --> overWorkSalary max 10 hours a week and are paid 11 TL
+Chiefs --> overWorkSalary max 8 hours a week and are paid 15 TL
+
+Part-Time Employee hourOfWork, severancePay. Can work a min 10 hours and max 20 hours and they are paid 18 TL per hour.
+
+***Academicians, Officers, Workers, and Chiefs have to work 40 hours per week. That is, in given input file, the working hour of these employees  will not be less than 40 for a week. (Ignore the condition of working less than 40 hours)
+
+***Consider the total working hours for the salary of the security. That is, if they worked less than 30 hours (total) in a week, they will not pay any salary including transportation (transMoney) and food (foodMoney) for that week.
+
+
+***Part-time Employees can work a minimum of 10 hours and a maximum of 20 hours a week and they are paid 18 TL per hour. That is, if they worked less than 10 hours in total in a week, they will not pay any salary for that week.
+
+SALARY CALCULATİON
+
+Academicians, Officers, Workers and Chiefs work 40 hours per week, ek saatler hariç
+
+1 month = 28 days
+
+Base salary is 2600 TL and it is constant for Academicians and Officers.
+
+Special service benefits are %135 of the base salary of a faculty member, %105 assistants, %65 officers
+
+Severance pay changes aaccording to experience of Personnel that is the number of working years in the university.
+For each year, personnel gains 20 points multiplied by 0,8.
+It is calculated as follows:
+
+(currentyear - yearofstart) * 20 * 0,8 = X TL
+
+OUTPUT --> Registiration Number.txt
+
+[Name]space:space[  ]newline
+
+F5632.txt
+
+Name : MEHMET
+Surname : YILMAZ
+RegistirationNumber : F5632
+Position : FACULTY_MEMBER
+Year ofStart : 2003
+Total Salary : 6942.00 TL

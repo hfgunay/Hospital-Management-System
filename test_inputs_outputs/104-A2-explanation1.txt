@@ -1,0 +1,40 @@
+Academicians   Officers     Security         Employee
+base          base          hourwork         full time employee
+ssbenefits    ssbenefits    severance pay    dayofwork
+severance     overwork      dayofwork        severancepay
+                                             overwork
+facultymemb                                  part time
+addcoursefee                                 pverwork  
+                                             severancepay
+
+
+Personnel.java
+name
+surname
+register number
+year of start
+currentyear = 2020;
+1.week
+2.week
+3.week
+4.week
+
+method severance pay hesaplama methodu
+
+Academicians.java
+base
+ssbenefits
+severance
+
+
+
+Facultymember.java
+extends academicians
+addcoursefee 20tl
+
+method ek ders ücreti hesaplamak için
+ssbenefits hesaplama methodu
+
+Assistants.java
+extends academicians
+ssbenefits hesaplama methodu
